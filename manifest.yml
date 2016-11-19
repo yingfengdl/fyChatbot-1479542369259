@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: fyChatbot
+  host: fyChatbot
+  disk_quota: 1024M
+  services:
+  - Conversation-Chatbot
+  - Speech2Text-Chatbot
+  - Text2Speech-Chatbot
